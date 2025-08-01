@@ -336,7 +336,7 @@ type create.sql rain.sql 2> nul | sqlite3 :memory:
 ## GIS でも CUI、GIS でも SQL
 
 &emsp;次のバッチファイルを実行すると、四国４県の地理情報が shikoku.sqlite に収納される<br>
-&emsp;QGIS 同梱の [ogr2ogr.exe](https://gdal.org/en/stable/programs/ogr2ogr.html) は [OSGeo 財団](https://www.osgeo.org/) がオープンソースで公開している [GDAL](https://gdal.org/)（**G**eospatial **D**ata **A**bstraction **L**ibrary）を用いて作成されたベクターデータ用のプログラム。
+&emsp;QGIS 同梱の [ogr2ogr.exe](https://gdal.org/en/stable/programs/ogr2ogr.html) は [OSGeo 財団](https://www.osgeo.org/) がオープンソースで公開している [GDAL](https://gdal.org/)（**G**eospatial **D**ata **A**bstraction **L**ibrary）を用いて作成された[地理情報用のコマンドラインツール](GDAL_cheat_sheet.md)の一つ。
 GDAL は **i-RIC**, QGIS, Google Earth, ArcGIS 等々、様々なソフトウエアで利用されている<br>
 &emsp;クエリ文字列 %SQL% に標準 SQL では非対応の ST_Union 関数（ここでは同一県内の市町村のポリゴンをマージする）を含むので dialect（方言）引数に sqlite を指定。nln は **n**ew **l**ayer **n**ame<br>
 &emsp;入力ファイル [japan_ver84.zip](https://www.esrij.com/products/japan-shp/) は ESRI JAPAN が公開している全国**市区町村界**データ（ESRI ShapeFile）。
