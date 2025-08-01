@@ -297,8 +297,7 @@ year  days<br>
 
 ```sql
  1	.header on
- 2	.mode markdown -- cool !
-   
+ 2	.mode markdown -- cool !   
  3	select
  4	    T.year as year,
  5	    max(T.d1) as max_d1,
