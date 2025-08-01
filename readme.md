@@ -297,7 +297,7 @@ year  days<br>
 
 ```sql
  1	.header on
- 2	.mode column
+ 2	.mode markdown -- cool !
    
  3	select
  4	    T.year as year,
@@ -322,14 +322,21 @@ year  days<br>
 #### コマンドライン
 
 ```bash
-sqlite3 kitami_daily.db < rain.sql
+sqlite3 kitami_daily.db < rain.sql | clip
 ```
 
 &emsp;あるいは、インメモリデータベース（```:memory:```）を使う場合
 
 ```bash
-type create.sql rain.sql 2> nul | sqlite3 :memory:
+type create.sql rain.sql 2> nul | sqlite3 :memory: | clip
 ```
+
+#### クリップボードの中身
+
+| year | max_d1 | max_d2 | max_d3 |
+|------|--------|--------|--------|
+| 2023 | 40.0   | 57.0   | 58.0   |
+| 2024 | 31.0   | 37.0   | 38.0   |
 
 ----
 

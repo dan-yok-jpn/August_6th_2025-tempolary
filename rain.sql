@@ -1,5 +1,5 @@
 .header on
-.mode column
+.mode markdown
 
 select
     T.year as year,
