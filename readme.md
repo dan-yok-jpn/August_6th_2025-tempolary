@@ -1,9 +1,9 @@
 ## Web Scraping の実践
 
-&emsp;[VBA](file:///C:/Users/dan_y/Documents/repositories/WIS/readme.md#%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%96%E5%BE%97) で記述された [Selenium](https://www.selenium.dev/ja/) 言語バインディング（[SeleniumVBA](https://github.com/GCuser99/SeleniumVBA)）と [ChromeDriver](https://developer.chrome.com/docs/chromedriver?hl=ja) を用いて[気象庁のウェブページ](https://www.data.jma.go.jp/stats/etrn/index.php)から[北見観測所](https://www.data.jma.go.jp/stats/etrn/view/daily_a1.php?prec_no=17&block_no=0074&year=2025&month=7)のデータをスクレーピングする。実行環境の設定方法は[こちら](Install_SeleniumVBA.md)を参照
+&emsp;[VBA](file:///C:/Users/dan_y/Documents/repositories/WIS/readme.md#%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%96%E5%BE%97) で記述された [Selenium](https://www.selenium.dev/ja/) 言語バインディング（[SeleniumVBA](https://github.com/GCuser99/SeleniumVBA)）と [ChromeDriver](https://developer.chrome.com/docs/chromedriver?hl=ja) を用いて[気象庁のウェブページ](https://www.data.jma.go.jp/stats/etrn/index.php)から[北見観測所](https://www.data.jma.go.jp/stats/etrn/view/daily_a1.php?prec_no=17&block_no=0074&year=2025&month=7)のデータをスクレーピングする。[こちらのリポジトリ](https://github.com/dan-yok-jpn/SeleniumVBA)の ```sample.xlsm``` を流用すると自動的に環境設定が行われる
 
 <div style="text-align: center">
-<img src="https://s3-ap-northeast-1.amazonaws.com/codegrid/2014-selenium/img/selenium-2.png" width="60%">
+<img src="https://github.com/dan-yok-jpn/SeleniumVBA/raw/master/img/basic_comms.png" width="60%">
 </div>
 
 ### 2025 年 7 月のデータを表示する URL
