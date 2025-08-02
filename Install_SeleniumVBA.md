@@ -1,4 +1,4 @@
-## Excel と Chrome によるウェブスクレーピングのための環境設定
+## Excel と Chrome によるウェブスクレーピングのための環境設定（手動）
 
 ### SeleniumVBA のインストール
 
@@ -38,7 +38,9 @@
     ```
 
 &emsp;以上で %LOCALAPPDATA%\SeleniumVBA の構成が以下のようであれば OK<br>
-&emsp;**ただし、SeleniumVBA、ChromeDriver 共にしばしばアップデートされているので随時、上書きする**
+<!-- &emsp;**ただし、SeleniumVBA、ChromeDriver 共にしばしばアップデートされているので随時、上書きする** -->
+&emsp;なお、[こちらのリポジトリ](https://github.com/dan-yok-jpn/SeleniumVBA)の ```sample.xlsm``` を流用すると、自動的に使用中の Chrome のバージョンに適合する ```chromedriver.exe``` がインストールされる。
+また ```SeleniumVBA_win64.dll``` の更新がなされている場合はインストーラのダウンロードが行われ、インストールの実行が催促される。
 
 ```
 %LOCALAPPDATA%\SeleniumVBA
